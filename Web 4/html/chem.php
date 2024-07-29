@@ -35,126 +35,126 @@ if (!isset($_SESSION['FName'])) {
             </div>
         </div>
     </div>
-    <div class="center">
+    <div class="center" id="phy">
         <ul>
             <li class="mod" id="mod1">
                 <a>Module-1 &DoubleRightArrow; Introduction to waves</a>
                 <ul class="drop1">
                     <li id="oneOne">
-                        <p>500/-</p> <a href="../pdfs/final.pdf" target="_"><button
+                        <p>500/-</p> <a href="../html/pdfopener.php?pdf=../pdfs/phy/phymod1s.pdf" target="_"><button
                                 style="background-color: #f70801;">view</button></a><a><button
                                 onclick="addToCart(mod1,oneOne)" style="background-color: #48b419;">add</button></a>
                     </li>
-                    <li id="oneTwo">
+                    <!-- <li id="oneTwo">
                         <p>100/-</p> <a href="../pdfs/acknowledgment.pdf" target="_"><button
                                 style="background-color: #f70801;">view</button></a><a><button
                                 onclick="addToCart(mod1,oneOne)" style="background-color: #48b419;">add</button></a>
-                    </li>
+                    </li> -->
                 </ul>
             </li>
             <li class="mod" id="mod2">
                 <a>Module-2 &DoubleRightArrow; Electromagnetic waves</a>
                 <ul class="drop1">
                     <li id="twoOne">
-                        <p>500/-</p> <a href="../pdfs/final.pdf" target="_"><button
+                        <p>500/-</p> <a href="../html/pdfopener.php?pdf=../pdfs/phy/phymod2s.pdf" target="_"><button
                                 style="background-color: #f70801;">view</button></a><a><button
                                 onclick="addToCart(mod2,twoOne)" style="background-color: #48b419;">add</button></a>
                     </li>
-                    <li id="twoTwo">
+                    <!-- <li id="twoTwo">
                         <p>100/-</p> <a href="../pdfs/acknowledgment.pdf" target="_"><button
                                 style="background-color: #f70801;">view</button></a><a><button
                                 onclick="addToCart(mod2,twoTwo)" style="background-color: #48b419;">add</button></a>
-                    </li>
+                    </li> -->
                 </ul>
             </li>
             <li class="mod" id="mod3">
                 <a>Module-3 &DoubleRightArrow; Elements of quantum mechanics</a>
                 <ul class="drop1">
                     <li id="threeOne">
-                        <p>500/-</p> <a href="../pdfs/final.pdf" target="_"><button
+                        <p>500/-</p> <a href="../html/pdfopener.php?pdf=../pdfs/phy/phymod3s.pdf" target="_"><button
                                 style="background-color: #f70801;">view</button></a><a><button
                                 onclick="addToCart(mod3,threeOne)" style="background-color: #48b419;">add</button></a>
                     </li>
-                    <li id="threeTwo">
+                    <!-- <li id="threeTwo">
                         <p>100/-</p> <a href="../pdfs/acknowledgment.pdf" target="_"><button
                                 style="background-color: #f70801;">view</button></a><a><button
                                 onclick="addToCart(mod3,threeTwo)" style="background-color: #48b419;">add</button></a>
-                    </li>
+                    </li> -->
                 </ul>
             </li>
             <li class="mod" id="mod4">
                 <a>Module-4 &DoubleRightArrow; Applications of quantum mechanics</a>
                 <ul class="drop1">
                     <li id="fourOne">
-                        <p>500/-</p> <a href="../pdfs/final.pdf" target="_"><button
+                        <p>500/-</p> <a href="../html/pdfopener.php?pdf=../pdfs/phy/phymod4s.pdf" target="_"><button
                                 style="background-color: #f70801;">view</button></a><a><button
                                 onclick="addToCart(mod4,fourOne)" style="background-color: #48b419;">add</button></a>
                     </li>
-                    <li id="fourTwo">
+                    <!-- <li id="fourTwo">
                         <p>100/-</p> <a href="../pdfs/acknowledgment.pdf" target="_"><button
                                 style="background-color: #f70801;">view</button></a><a><button
                                 onclick="addToCart(mod4,fourTwo)" style="background-color: #48b419;">add</button></a>
-                    </li>
+                    </li> -->
                 </ul>
             </li>
             <li class="mod" id="mod5">
                 <a>Module-5 &DoubleRightArrow; Lasers</a>
                 <ul class="drop1">
                     <li id="fiveOne">
-                        <p>500/-</p> <a href="../pdfs/final.pdf" target="_"><button
+                        <p>500/-</p> <a href="../html/pdfopener.php?pdf=../pdfs/phy/phymod5s.pdf" target="_"><button
                                 style="background-color: #f70801;">view</button></a><a><button
                                 onclick="addToCart(mod5,fiveOne)" style="background-color: #48b419;">add</button></a>
                     </li>
-                    <li id="fiveTwo">
+                    <!-- <li id="fiveTwo">
                         <p>100/-</p> <a href="../pdfs/acknowledgment.pdf" target="_"><button
                                 style="background-color: #f70801;">view</button></a><a><button
                                 onclick="addToCart(mod5,fiveTwo)" style="background-color: #48b419;">add</button></a>
-                    </li>
+                    </li> -->
                 </ul>
             </li>
             <li class="mod" id="mod6">
                 <a>Module-6 &DoubleRightArrow; Propagation of EM waves in optical fibers </a>
                 <ul class="drop1">
                     <li id="sixOne">
-                        <p>500/-</p> <a href="../pdfs/final.pdf" target="_"><button
+                        <p>500/-</p> <a href="../html/pdfopener.php?pdf=../pdfs/phy/phymod6s.pdf" target="_"><button
                                 style="background-color: #f70801;">view</button></a><a><button
                                 onclick="addToCart(mod6,sixOne)" style="background-color: #48b419;">add</button></a>
                     </li>
-                    <li id="sixTwo">
+                    <!-- <li id="sixTwo">
                         <p>100/-</p> <a href="../pdfs/acknowledgment.pdf" target="_"><button
                                 style="background-color: #f70801;">view</button></a><a><button
                                 onclick="addToCart(mod6,sixTwo)" style="background-color: #48b419;">add</button></a>
-                    </li>
+                    </li> -->
                 </ul>
             </li>
             <li class="mod" id="mod7">
                 <a>Module-7 &DoubleRightArrow; Optoelectronic devices</a>
                 <ul class="drop1">
                     <li id="sevenOne">
-                        <p>500/-</p> <a href="../pdfs/final.pdf" target="_"><button
+                        <p>500/-</p> <a href="../html/pdfopener.php?pdf=../pdfs/phy/phymod7s.pdf" target="_"><button
                                 style="background-color: #f70801;">view</button></a><a><button
                                 onclick="addToCart(mod7,sevenOne)" style="background-color: #48b419;">add</button></a>
                     </li>
-                    <li id="sevenTwo">
+                    <!-- <li id="sevenTwo">
                         <p>100/-</p> <a href="../pdfs/acknowledgment.pdf" target="_"><button
                                 style="background-color: #f70801;">view</button></a><a><button
                                 onclick="addToCart(mod7,sevenTwo)" style="background-color: #48b419;">add</button></a>
-                    </li>
+                    </li> -->
                 </ul>
             </li>
             <li class="mod" id="mod8">
                 <a>Module-8 &DoubleRightArrow;</a>
                 <ul class="drop1">
                     <li id="eightOne">
-                        <p>500/-</p> <a href="../pdfs/final.pdf" target="_"><button
+                        <p>500/-</p> <a href="../html/pdfopener.php?pdf=../pdfs/phy/phymod8s.pdf" target="_"><button
                                 style="background-color: #f70801;">view</button></a><a><button
                                 onclick="addToCart(mod8,eightOne)" style="background-color: #48b419;">add</button></a>
                     </li>
-                    <li id="eightTwo">
+                    <!-- <li id="eightTwo">
                         <p>100/-</p> <a href="../pdfs/acknowledgment.pdf" target="_"><button
                                 style="background-color: #f70801;">view</button></a><a><button
                                 onclick="addToCart(mod8,eightTwo)" style="background-color: #48b419;">add</button></a>
-                    </li>
+                    </li> -->
                 </ul>
             </li>
         </ul>
@@ -165,6 +165,7 @@ if (!isset($_SESSION['FName'])) {
             $Amount = $_POST['Amount'];
             $Link = $_POST['Link'];
             $reg = $_SESSION['RegNumber'];
+
             $query = "INSERT INTO `invoice_det` (`RegNumber`, `PDF_NAME`, `Module`, `AMOUNT`,`Link`) VALUES ('$reg' ,'$PDF_Name', '$Module', '$Amount','$Link')";
             mysqli_query($conn, $query);
         }

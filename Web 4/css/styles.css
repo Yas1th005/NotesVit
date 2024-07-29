@@ -578,3 +578,66 @@ iframe{
     border: none;
 }
 
+/*----- QR Page ------*/
+.steps{
+    color: white;
+    list-style-type:decimal;
+}
+.steps li{
+    padding-bottom: 5px;
+}
+.lside{
+    position: absolute;
+    left: 20vh;
+    top: 20vh;
+    letter-spacing: 1.5px;
+}
+.transid{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+}
+.transid input{
+    padding: 5px;
+    color: white;
+    background-color:#2b3433;
+}
+.transid button{
+    padding: 5px;
+    background-color: #D3D9D4;
+}
+.transid button:hover{
+    color:aliceblue;
+    cursor: pointer;
+}
+#qr{
+    position: absolute;
+    border-style: solid;
+    border-color: white;
+    right: 20px;
+    top: 20px;
+    width: 30%;
+    height: 95%;
+}
+#qr img{
+    position: absolute;
+    width: 80%;
+    height: 60%;
+    left: 10%;
+    bottom: 10%;
+}
+#qr button{
+    position: absolute;
+    border-style: solid;
+    border-color:#D3D9D4;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: white;
+    border-radius: 5px;
+    width: max-content;
+    padding: 10px;
+    background-color: green;
+    top: 15%;
+    left: 40%;
+}

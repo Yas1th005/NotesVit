@@ -3,6 +3,7 @@ var totalNumber=0;
 var price=0;
 var pass=0;
 var item;
+var send;
 function addToCart(item,cost){
     itemNumber+=1;
     var container=document.createElement('div');
@@ -36,7 +37,6 @@ function addToCart(item,cost){
     selectedItem.append(lnk);
     price= parseFloat(container.children[1].innerText.replace('/-',''));
     total(price);
-    console.log(cart)
 }
 
 function del(item,cont){
@@ -45,9 +45,12 @@ function del(item,cont){
     document.getElementById(item).remove();
     itemNumber-=1;
 }
+
 function total(price){
     totalNumber+=price;
     sum.children[0].innerText='Total: '+totalNumber+'/-';
+    let qrpay = parseInt(localStorage.getItem('qrpay')) || 0;
+    localStorage.setItem('qrpay', totalNumber);
 }
 
 function sendTotalPricePhy() {
@@ -57,7 +60,6 @@ function sendTotalPricePhy() {
         var Mod=document.getElementById(number).children[1].children[0].innerText;
         var Amt=document.getElementById(number).children[1].children[1].innerText;
         var Lnk=document.getElementById(number).children[2].innerText;
-        console.log(document.getElementById(number).children[2].innerText)
         $.ajax({
             url: 'phy.php', // The PHP script that will handle the data
             type: 'POST',
@@ -66,6 +68,7 @@ function sendTotalPricePhy() {
         number+=1;
         if(!document.getElementById(number)){
             number=0;
+            window.location.href = '../html/upi.php';
         }
     }
     
@@ -85,10 +88,60 @@ function sendTotalPriceChem() {
         number+=1;
         if(!document.getElementById(number)){
             number=0;
+            window.location.href = '../html/upi.php';
         }
     }
-    
 }
+function sendTotalPriceEee() {
+    var number=1;
+    while(number!=0){
+        var PDFName=document.getElementById(number).children[0].innerText;
+        var Mod=document.getElementById(number).children[1].children[0].innerText;
+        var Amt=document.getElementById(number).children[1].children[1].innerText;
+        var Lnk=document.getElementById(number).children[2].innerText;
+        $.ajax({
+            url: 'eee.php', // The PHP script that will handle the data
+            type: 'POST',
+            data: { PDF_Name: PDFName,Module:Mod,Amount:Amt,Link:Lnk },
+        });
+        number+=1;
+        if(!document.getElementById(number)){
+            number=0;
+            window.location.href = '../html/upi.php';
+        }
+    }
+}
+function sendTotalPriceCalculus() {
+    var number=1;
+    while(number!=0){
+        var PDFName=document.getElementById(number).children[0].innerText;
+        var Mod=document.getElementById(number).children[1].children[0].innerText;
+        var Amt=document.getElementById(number).children[1].children[1].innerText;
+        var Lnk=document.getElementById(number).children[2].innerText;
+        $.ajax({
+            url: 'calculus.php', // The PHP script that will handle the data
+            type: 'POST',
+            data: { PDF_Name: PDFName,Module:Mod,Amount:Amt,Link:Lnk },
+        });
+        number+=1;
+        if(!document.getElementById(number)){
+            number=0;
+            window.location.href = '../html/upi.php';
+        }
+    }
+}
+function onPageLoad() {
+    if (window.location.pathname.endsWith('upi.php')) {
+        let qrpay = localStorage.getItem('qrpay') || 0;
+        document.getElementById('qr').children[0].innerText = "Pay: " + qrpay+'/-';
+        console.log("Pay: " + qrpay);
+    }
+}
+document.addEventListener("DOMContentLoaded", onPageLoad);
+
+
+
+
 
 
 

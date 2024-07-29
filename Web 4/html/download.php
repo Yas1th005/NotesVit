@@ -48,7 +48,7 @@ if (!isset($_SESSION['FName'])) {
                 <tbody>
                     <?php
                     $reg = $_SESSION['RegNumber'];
-                    $query = "SELECT T1.PDF_Name,T1.Module,T1.Amount,T1.Link FROM invoice_det T1 WHERE RegNumber='$reg'";
+                    $query = "SELECT T1.PDF_Name,T1.Module,T1.Amount,T1.Link FROM final_data T1 WHERE RegNumber='$reg'";
                     $data = mysqli_query($conn, $query);
                     if (mysqli_num_rows($data) > 0) {
                         while ($data_row = mysqli_fetch_array($data, MYSQLI_ASSOC)) {
@@ -68,6 +68,11 @@ if (!isset($_SESSION['FName'])) {
                     ?>
                 </tbody>
             </table>
+            <br><br>
+            <p style="color:white;letter-spacing:1.5px;text-align: center;">If you bought a PDF and it is not visible
+                then wait for 2-3
+                hours</p>
+            <br><br>
             <div class="footer" id="foot">
                 <div>
                     <p>click <a href="">here</a> to post <b>your notes</b> and <b>get paid</b> $$</p>

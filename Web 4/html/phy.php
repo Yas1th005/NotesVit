@@ -15,6 +15,14 @@ if (!isset($_SESSION['FName'])) {
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="../css/styles.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function navigateToPage2() {
+            // Add an entry to the history stack
+            history.pushState({}, '', 'upi.php');
+            // Navigate to the next page
+            window.location.href = '../html/upi.php';
+        }
+    </script>
 </head>
 
 <body>
@@ -167,7 +175,8 @@ if (!isset($_SESSION['FName'])) {
             $reg = $_SESSION['RegNumber'];
 
             $query = "INSERT INTO `invoice_det` (`RegNumber`, `PDF_NAME`, `Module`, `AMOUNT`,`Link`) VALUES ('$reg' ,'$PDF_Name', '$Module', '$Amount','$Link')";
-            mysqli_query($conn, $query);
+            $data = mysqli_query($conn, $query);
+
         }
 
         ?>
